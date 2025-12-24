@@ -10,7 +10,18 @@ body{
     color: aliceblue;
 }
 
+.cabecalho img{
+    display: flex;
+    height: 30px;
+    width: auto;
+    object-fit: contain;
+    margin-left: 20px;
+}
+
 .cabecalho{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     background-color: black;
     padding: 35px;
@@ -58,20 +69,31 @@ body{
 }
 
 .logos img{
-    height: 250px;
+    height: 200px;
     margin: 0 40px;
 }
 
 .logos{
     display: inline-block;
     animation: slide 15s infinite linear;
+    position: relative;
+    
 }
 
 .carrossel {
+    position: relative;
     white-space: nowrap;
     background-color: black;
     padding: 60px 0;
     overflow: hidden;
+
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 20%,
+        black 80%,
+        transparent
+    );
 }
 
 @keyframes slide {
