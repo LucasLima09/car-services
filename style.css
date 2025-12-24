@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: aliceblue;
+}
+
+.cabecalho{
+    width: 100%;
+    background-color: black;
+    padding: 35px;
+    position: fixed;
+    z-index: 9999;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.115);
+}
+
+.cabecalho a{
+    color: aliceblue;
+    font-size: 22px;
+    text-decoration: none;
+    font-family: "BBH Bogle", sans-serif;
+    transition: 0.5s;
+}
+
+.cabecalho a:hover{
+    color: black;
+    background-color: aliceblue;
+    padding: 0px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.cabecalho .options{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+}
+
+.inicio{
+    display: flex;
+    font-size: 50px;
+    background-image: url(img/bmw\ fundo.jpg);
+    background-position: center;
+    background-position-y: -40px;
+    justify-content: center;
+    align-self: center;
+    padding: 400px;
+}
+
+.inicio h1{
+    font-family: "BBH Bartle", sans-serif;
+    text-shadow: 0px 0px 100px black;
+}
+
+.logos img{
+    height: 250px;
+    margin: 0 40px;
+}
+
+.logos{
+    display: inline-block;
+    animation: slide 15s infinite linear;
+}
+
+.carrossel {
+    white-space: nowrap;
+    background-color: black;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }to{
+        transform: translateX(-100%);
+    }
+}
+
+.servico{
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    margin: 100px;
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.card-texto{
+    width: 600px;
+    border-left: 2px solid white ;
+    padding-left: 8px; 
+}
+
+.card-texto h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.card-texto p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.card.reverso{
+    flex-direction: row-reverse;
+}
+
+.card.reverso .card-texto{
+    text-align: end;
+    border-left: none;
+    border-right: 2px solid white ;
+    padding-right: 8px; 
+}
+
+.card img{
+    height: 800px;
+    width: 500px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.card img:hover{
+    scale: 1.02;
+    transition: 0.5s;
+}
+
+.servico hr{
+    opacity: 30%;
+    width: 75%;
+    margin: 0px auto;
+}
