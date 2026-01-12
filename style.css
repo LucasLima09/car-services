@@ -173,3 +173,26 @@ body{
     width: 75%;
     margin: 0px auto;
 }
+
+.sobre{
+    padding: 40px;
+    background-color: rgb(212, 212, 212);
+    color: black;
+    text-align: center;
+}
+
+.sobre h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+.sobre p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+}
