@@ -67,6 +67,10 @@ body{
     padding: 400px;
 }
 
+.inicio .responsive{
+    display: none;
+}
+
 
 .inicio h1{
     font-family: "BBH Bartle", sans-serif;
@@ -179,6 +183,7 @@ body{
     background-color: rgb(212, 212, 212);
     color: black;
     text-align: center;
+    width: 100%
 }
 
 .sobre h2{

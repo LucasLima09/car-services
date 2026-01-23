@@ -1,0 +1,70 @@
+@media (max-width: 1024px){
+    .inicio{
+        justify-content: center;
+        padding: 200px;
+        background-size: cover;
+        background-position-y: 30px;
+        height: 100px;
+        align-items: center;
+    }
+    .inicio .titulo{
+        font-size: 24px;
+        display: none;
+    }
+
+    .inicio .responsive{
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        text-align: center;
+        margin-top: auto;
+    }
+
+    .servico{
+        flex-direction: column;
+        margin: 20px;
+    }
+    
+    .card{
+        flex-direction: column;
+    }
+
+    .card-texto{
+        width: 100%;
+        border-left: 2px solid white ;
+        padding-left: 8px; 
+    }
+
+    .card-texto h2{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+
+    .card-texto p {
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.6;
+    }
+    .card img{
+        width: 100%;
+        height: 400px;
+        
+    }
+    .card.reverso{
+        flex-direction: column;
+    }
+
+    .card.reverso .card-texto{
+        text-align: end;
+        border-left: none;
+        border-right: 2px solid white ;
+        padding-right: 8px; 
+    }
+
+    .sobre{
+        margin-top: 100px;
+    }
+}
